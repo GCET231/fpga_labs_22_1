@@ -7,12 +7,12 @@
 // Editor : Sublime Text 3, tab size (3)
 // -----------------------------------------------------------------------------
 // Description:
-//      Módulo de teste para o Lab2b Parte 0
+//      Módulo de teste para o somador-subtrator parametrizado
 // -----------------------------------------------------------------------------
 
 `default_nettype none
 
-module addsub_param_tb;
+module addsub_tb;
 
    localparam N=8;   // Tente modificar este valor para 32
     
