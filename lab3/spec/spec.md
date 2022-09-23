@@ -237,7 +237,7 @@ module alu #(
 
 | Entradas |         | Saídas |           |
 | :------: | :-----: | :----: | :-------: |
-| `bool1`  | `bool2` | `left` | `logical` |
+| `bool1`  | `bool0` | `left` | `logical` |
 |    0     |    0    |        |           |
 |    0     |    1    |        |           |
 |    1     |    0    |        |           |
@@ -266,7 +266,7 @@ A figura acima inclui algumas funcionalidades adicionais. Especificamente, as op
 
 > 💁 Perceba as diferenças entre as duas imagens (novas funcionalidades foram destacadas em **vermelho**). Revise essa nova informação com cuidado antes de continuar.
 
-A comparação entre os dois operandos `A` e `B`, é realizada a partir da subtração (`A-B`), seguida da verificação das _flags_ (`N`, `V` e `C`) produzidas. Observe que, em ambos os casos, o bit `Sub` de `ALUfn` está ativo. O bit menos significativo de `Bool` determina quando a comparação é deve considerar o sinal (_signed_) ou não (_unsigned_). Quando comparando números sem sinal, o resultado para `A-B` é negativo se e somente se _o carry out mais significativo do somador-subtrator (ou seja, a `flag` `C`) for igual a `0`_.
+A comparação entre os dois operandos `A` e `B`, é realizada a partir da subtração (`A-B`), seguida da verificação das _flags_ (`N`, `V` e `C`) produzidas. Observe que, em ambos os casos, o bit `Sub` de `ALUfn` está ativo. O bit menos significativo de `Bool` determina quando a comparação deve considerar o sinal (_signed_) ou não (_unsigned_). Quando comparando números sem sinal, o resultado para `A-B` é negativo se e somente se _o carry out mais significativo do somador-subtrator (ou seja, a `flag` `C`) for igual a `0`_.
 
 Não pode haver _overflow_ quando dois números positivos são subtraídos, mas quando os números estão sendo comparados como _signed_ (na notação de complemento de 2), o resultado da operação `A-B` é negativo se:
 
