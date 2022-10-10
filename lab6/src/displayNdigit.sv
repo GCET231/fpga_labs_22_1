@@ -22,24 +22,24 @@
 `default_nettype none
 
 module displayNdigit #(
-	parameter NDIG = 4
+   parameter NDIG = 4
 )(
-	input  wire clock,
+   input  wire clock,
    input  wire [(NDIG*4)-1:0] value,   
-	output wire [6:0] segments [0:NDIG-1]
+   output wire [6:0] segments [0:NDIG-1]
 );
 
-	logic [3:0] value4bit [0:NDIG-1];
-	
-	genvar i;
+   logic [3:0] value4bit [0:NDIG-1];
+   
+   genvar i;
 
-	generate 
-		for ( i = 0; i < NDIG; i = i + 1)
+   generate 
+      for ( i = 0; i < NDIG; i = i + 1)
       begin : hex_encoder
       /******** SEU CÓDIGO AQUI ********/
-		
+      
       /******** FIM DO SEU CÓDIGO ******/
       end
-	endgenerate
+   endgenerate
 
 endmodule
