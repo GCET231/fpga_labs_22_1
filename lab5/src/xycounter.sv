@@ -23,18 +23,18 @@
 `default_nettype none
 
 module xycounter #(
-	parameter WIDTH  = 2, 
-	parameter HEIGHT = 2
-	)(
-	input  wire clock,   
-	input  wire enable,  
-	output logic [$clog2(WIDTH)-1:0]  x = 0,
-	output logic [$clog2(HEIGHT)-1:0] y = 0
-	);
+   parameter WIDTH  = 2, 
+   parameter HEIGHT = 2
+   )(
+   input  wire clock,   
+   input  wire enable,  
+   output logic [$clog2(WIDTH)-1:0]  x = 0,
+   output logic [$clog2(HEIGHT)-1:0] y = 0
+   );
 
 always @(posedge clock) begin
-	if (enable) begin
-		/* Coloque seu código aqui */
-	end	
+   if (enable) begin
+      /* Coloque seu código aqui */
+   end	
 end
 endmodule
