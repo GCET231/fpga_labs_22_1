@@ -73,6 +73,7 @@ Crie um novo módulo _top-level_ chamado `io_demo`, e chame seu novo arquivo de 
 Durante a aula esteja pronto para apresentar para o professor ou monitor:
 
 - Os arquivos referentes à [última parte do roteiro](#integrando-os-dispositivos-de-es-em-uma-nova-demonstração): `io_demo.sv`, e `display8digit.sv`.
+- Uma demonstração do [circuito contador de 8 dígitos](#display-de-7-segmentos-com-8-dígitos).
 - Uma demonstração do seu circuito final na DE2-115, garantindo o funcionamento correto do codificador.
 
 ## Agradecimentos
