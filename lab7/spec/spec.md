@@ -66,7 +66,7 @@ Seu projeto final deve atender aos requisitos a seguir:
 O comportamento esperado para o circuito é descrito a seguir em mais detalhes:
 
 - O contador inicia em 0, e começa a contagem crescente.
-- Se, a qualquer momento, o botão `KEY1` for pressionado, o contador alterna seu modo contagem para decrescente. Da mesma forma, se a qualquer momento o botão `KEY1` for pressionado, o contador alterna seu modo de contagem para crescente (pressionar o botão crescente enquanto o contador já estiver no modo crescente não produzirá efeito algum; assim como deve acontecer no modo decrescente).
+- Se, a qualquer momento, o botão `KEY0` for pressionado, o contador alterna seu modo contagem para decrescente. Da mesma forma, se a qualquer momento o botão `KEY1` for pressionado, o contador alterna seu modo de contagem para crescente (pressionar o botão crescente enquanto o contador já estiver no modo crescente não produzirá efeito algum; assim como deve acontecer no modo decrescente).
 - Se o contador estiver em contagem (crescente ou decrescente), e o botão `KEY2` for pressionado, o contador interrompe a contagem e mantém o valor atual. Em seguida, o mesmo botão deve ser pressionado novamente para que a contagem seja retomada.
 
 > 💁 A ação mais relevante (interromper ou retomar) deve acontecer quando o botão for pressionado, embora seja necessário detectar quando o botão é liberado antes que uma noa pressão no botão seja reconhecida novamente.
