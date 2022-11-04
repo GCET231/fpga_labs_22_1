@@ -166,14 +166,14 @@ Implemente seu projeto na placa. Se seu projeto funcionar corretamente, você de
 
 ## Acompanhamento
 
-### Parte 1: Caminho de Dados (entrega: próximo laboratório)
+### Parte 1: Caminho de Dados (entrega: 07 novembro 2022)
 
-Durante a aula esteja pronto para apresentar para o professor ou monitor:
+Até a data estipulada, envie por e-mail, utilizando o título **[GCET231] Lab7 - Seu Nome**, o que segue.
 
 - Os arquivos Verilog: `register_file.sv` e `datapath.sv`.
-- A simulação para o [caminho de dado](#projetando-um-caminho-de-dados), utilizando o _test bench_ fornecido junto com os arquivos de laboratório.
+- Uma captura de tela da simulação para o [caminho de dado](#projetando-um-caminho-de-dados), utilizando o _test bench_ fornecido junto com os arquivos de laboratório. Chame seu arquivo de `datapath_wave.png` (ou outro formato).
 
-### Parte 2: Display Baseado em Sprite (entrega: sexta-feira 04 de novembro, 2022)
+### Parte 2: Display Baseado em Sprite (entrega: sexta-feira 11 de novembro, 2022 - _sem adiamento_)
 
 - Uma demonstração de funcionamento do seu display baseado em _sprite_.
 

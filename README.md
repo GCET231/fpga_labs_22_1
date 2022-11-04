@@ -28,8 +28,8 @@ Para saber mais sobre como utilizar o Git e o GitHub, acesse o [Guia de Comandos
 | [Lab 4](lab4/spec/spec.md) | Desenvolver circuitos lógicos sequenciais, implementando circuito na placa DE2-115.           |      30 set. 2022       |
 | [Lab5](lab5/spec/spec.md)  | Utilizar circuitos contadores para projetar um gerador de sincronismo VGA.                    |      07 out. 2022       |
 | [Lab6](lab6/spec/spec.md)  | Analisar cenários de projeto, empregando diferentes interfaces de E/S.                        |      14 out. 2022       |
-| [Lab7](lab7/spec/spec.md)  | Entender como projetar uma FSM em Verilog, desenvolvendo o circuito de um cronômetro.         | ~~21 out.~~01 nov. 2022 |
-| [Lab8](lab8/spec/spec.md)  | Analisar um projeto baseado em caminho de dados, empregando modelagem hierárquica em Verilog. |      04 nov. 2022       |
+| [Lab7](lab7/spec/spec.md)  | Entender como projetar uma FSM em Verilog, desenvolvendo o circuito de um cronômetro.         | ~~21~~ ~~out.~~ 04 nov. 2022 |
+| [Lab8](lab8/spec/spec.md)  | Analisar um projeto baseado em caminho de dados, empregando modelagem hierárquica em Verilog. |      04 nov. (P1) 11 nov. (P2) 2022       |
 
 <!--
 
