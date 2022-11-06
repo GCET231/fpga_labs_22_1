@@ -105,12 +105,12 @@ module datapath_tb;
 
    // Código de auto-verificação
    
-   selfcheckDatapath selfcheck();  // c(checker_RD1, checker_RD2, checker_ALUResult, checker_FlagZ);
+   selfcheckDatapath selfcheck();  // selfcheck (checker_RD1, checker_RD2, checker_ALUResult, checker_FlagZ);
       
-   wire ERROR_RD1 = (RD1 != c.RD1)? 1'bX : 1'b0;
-   wire ERROR_RD2 = (RD2 != c.RD2)? 1'bX : 1'b0;
-   wire ERROR_ALUResult = (ALUResult != c.ALUResult)? 1'bX : 1'b0;
-   wire ERROR_FlagZ = (FlagZ != c.FlagZ)? 1'bX : 1'b0;
+   wire ERROR_RD1 = (RD1 != selfcheck.RD1) ? 1'bX : 1'b0;
+   wire ERROR_RD2 = (RD2 != selfcheck.RD2) ? 1'bX : 1'b0;
+   wire ERROR_ALUResult = (ALUResult != selfcheck.ALUResult) ? 1'bX : 1'b0;
+   wire ERROR_FlagZ = (FlagZ != selfcheck.FlagZ) ? 1'bX : 1'b0;
    wire ERROR = ERROR_RD1 | ERROR_RD2 | ERROR_ALUResult | ERROR_FlagZ;
 
 
