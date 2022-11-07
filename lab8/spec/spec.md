@@ -162,7 +162,7 @@ Tenha em mente os seguintes pontos, a medida em que realiza esta tarefa:
   - O mapeamento a partir do código do caractere que a _screen memory_ fornece para você, até a posição inicial do _bitmap_ armazenado para aquele caractere na _bitmap memory_.
   - O mapeamento a partir das coordenadas de pixel `(x,y)` produzidas pelo gerador de temporização VGA, para o deslocamento de `x` e `y` dentro do _bitmap_ para aquele caractere específico definido na _bitmap memory_.
 
-Implemente seu projeto na placa. Se seu projeto funcionar corretamente, você deve visualizar um padrão no monitor VGA contendo barras verticais alternadas vermelhas e verdes.
+Implemente seu projeto na placa utilizando os arquivos `smem.mem` e `bmem.mem`. Se seu projeto funcionar corretamente, você deve visualizar um padrão no monitor VGA contendo ~~barras verticais alternadas vermelhas e verdes~~ "GCET 231".
 
 ## Acompanhamento
 
