@@ -2,11 +2,11 @@
 // Universidade Federal do Recôncavo da Bahia
 // -----------------------------------------------------------------------------
 // Author : João Carlos Bittencourt
-// File   : selfcheckDriver.sv
+// File   : selfcheckDatapath.sv
 // Editor : Visual Studio Code, tab size (3)
 // -----------------------------------------------------------------------------
 // Module Purpose:
-//      Módulo de auto-verificacao para o DatapathTb
+//      Módulo de auto-verificacao para o Datapath_Tb
 // -----------------------------------------------------------------------------
 `timescale 1ns / 1ps
 module selfcheckDatapath();
