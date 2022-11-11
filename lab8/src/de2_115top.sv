@@ -13,8 +13,8 @@
 module de2_115top #(
     parameter Nchars=4,                   // quantidade de caracteres/sprites
     parameter smem_size=1200,             // tamanho da memória da tela, 30 linhas x 40 colunas
-    parameter smem_init="screenmem.mem", 	// arquivo de texto que inicializa a screen memory
-    parameter bmem_init="bitmapmem.mem" 	// arquivo de texto que inicializa a bitmap memory
+    parameter smem_init="screen.mem", 	   // arquivo de texto que inicializa a screen memory
+    parameter bmem_init="bitmap.mem" 	   // arquivo de texto que inicializa a bitmap memory
 )(
    // Entrada do clock
    input  wire CLOCK_50,					//	50 MHz
