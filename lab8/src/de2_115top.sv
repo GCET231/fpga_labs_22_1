@@ -11,10 +11,10 @@
 `timescale 1ns / 1ps
 `default_nettype none
 module de2_115top #(
-    parameter Nchars=4,                   // quantidade de caracteres/sprites
-    parameter smem_size=1200,             // tamanho da memória da tela, 30 linhas x 40 colunas
-    parameter smem_init="screen.mem", 	   // arquivo de texto que inicializa a screen memory
-    parameter bmem_init="bitmap.mem" 	   // arquivo de texto que inicializa a bitmap memory
+   parameter Nchars=4,                 // quantidade de caracteres/sprites
+   parameter smem_size=1200,           // tamanho da memória da tela, 30 linhas x 40 colunas
+   parameter smem_init="screen.mem", 	// arquivo de texto que inicializa a screen memory
+   parameter bmem_init="bitmap.mem" 	// arquivo de texto que inicializa a bitmap memory
 )(
    // Entrada do clock
    input  wire CLOCK_50,					//	50 MHz
@@ -45,7 +45,7 @@ module de2_115top #(
    assign VGA_CLK = CLOCK_50;
    assign VGA_BLANK_N = avideo;
    
-   rom #(.Nloc(smem_size), .Dbits($clog2(Nchars)), .initfile(smem_init)) screenmem(...);
-   vgadisplaydriver #(.Nchars(Nchars), .smem_size(smem_size), .bmem_init(bmem_init)) display(.clk(clk), .smem_addr, .charcode, .hsync, .vsync, .red, .green, .blue, .avideo);
+   rom #(.Nloc(smem_size), .Dbits($clog2(Nchars)), .initfile(smem_init)) screenmem (...);
+   vgadisplaydriver #(.Nchars(Nchars), .smem_size(smem_size), .bmem_init(bmem_init)) display (.clk(clk), .smem_addr, .charcode, .hsync, .vsync, .red, .green, .blue, .avideo);
 
 endmodule
