@@ -11,16 +11,16 @@
 `timescale 1ns / 1ps
 `default_nettype none
 module de2_115top #(
-    parameter Nchars=64,                         // number of characters/sprites
-    parameter smem_size=1200,                   // smem size, 30 rows x 40 cols
-    parameter smem_init="screenmem.mem", 	// text file to initialize screen memory
-    parameter bmem_init="bitmapmem.mem" 	// text file to initialize bitmap memory
+    parameter Nchars=4,                   // quantidade de caracteres/sprites
+    parameter smem_size=1200,             // tamanho da memória da tela, 30 linhas x 40 colunas
+    parameter smem_init="screenmem.mem", 	// arquivo de texto que inicializa a screen memory
+    parameter bmem_init="bitmapmem.mem" 	// arquivo de texto que inicializa a bitmap memory
 )(
    // Entrada do clock
    input  wire CLOCK_50,					//	50 MHz
    // Saídas do DAC VGA
-   output wire VGA_CLK,					// Clock para o controlador VGA
-   output wire VGA_SYNC_N,				// Sincronismo VGA
+   output wire VGA_CLK,					   // Clock para o controlador VGA
+   output wire VGA_SYNC_N,				   // Sincronismo VGA
    output wire VGA_BLANK_N, 				// Ativação do vídeo
    output wire [7:0] VGA_R,				// Cor Red
    output wire [7:0] VGA_G,				// Cor Green
