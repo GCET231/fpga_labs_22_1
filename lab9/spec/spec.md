@@ -140,12 +140,15 @@ Outras dicas que podem te ajudar durante os testes:
 
 Durante a aula esteja pronto para apresentar para o professor ou monitor:
 
-### Parte 1: Unidade de Controle (entrega: sexta-feira 18 de novembro, 2022)
+### Parte 1: Unidade de Controle (entrega: ~~sexta-feira 18 de novembro~~segunda-feira 21 de novembro, 2022)
 
 - A tabela da unidade de controle devidamente preenchida.
   - Utilize o template em [LaTeX](./uc_table.tex) ou [Markdown](./uc_table.md).
 - O arquivo Verilog: `controller.sv`.
 - A simulação para a [Unidade de Controle](#a-unidade-de-controle), utilizando o [_test bench_](../sim/tb/controller_tb.sv) fornecido junto com os arquivos de laboratório.
+
+> A entrega deve ser feita por e-mail com o assunto **[GCET231] - Entrega do Laboratório 9 - Parte 1 - Seu Nome**. Certifique-se de anexar separadamente os arquivos: um pdf contendo a tabela de instruções, o `controller.sv` e uma captura de tela da simulação. 
+
 
 ### Parte 2: Processador RISC231 Monociclo (entrega: sexta-feira 25 de novembro, 2022)
 

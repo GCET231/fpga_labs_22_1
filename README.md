@@ -30,4 +30,4 @@ Para saber mais sobre como utilizar o Git e o GitHub, acesse o [Guia de Comandos
 | [Lab 6](lab6/spec/spec.md)  | Analisar cenários de projeto, empregando diferentes interfaces de E/S.                        |          14 out. 2022          |
 | [Lab 7](lab7/spec/spec.md)  | Entender como projetar uma FSM em Verilog, desenvolvendo o circuito de um cronômetro.         |  ~~21~~ ~~out.~~ 04 nov. 2022  |
 | [Lab 8](lab8/spec/spec.md)  | Analisar um projeto baseado em caminho de dados, empregando modelagem hierárquica em Verilog. | 04 nov. (P1) 11 nov. (P2) 2022 |
-| [Lab 9](lab9/spec/spec.md)  | Projetar um processador monociclo, utilizando técnicas de projeto digital e Verilog.          | 18 nov. (P1) 11 nov. (P2) 2022 |     |
+| [Lab 9](lab9/spec/spec.md)  | Projetar um processador monociclo, utilizando técnicas de projeto digital e Verilog.          | ~~18~~ 21 nov. (P1) 25 nov. (P2) 2022 |     |
