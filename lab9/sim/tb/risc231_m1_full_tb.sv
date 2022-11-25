@@ -2,7 +2,7 @@
 // Universidade Federal do Recôncavo da Bahia
 // -----------------------------------------------------------------------------
 // Author : João Carlos Bittencourt
-// File   : risc231_m1_tb.sv
+// File   : risc231_m1_full_tb.sv
 // Editor : Sublime Text 3, tab size (3)
 // -----------------------------------------------------------------------------
 // Description:
@@ -126,7 +126,7 @@ module risc231_m1_full_tb;
    wire [31:0] c_aluB=selfcheck.aluB;
    wire [1:0]  c_pcsel=selfcheck.pcsel;
    wire [1:0]  c_wasel=selfcheck.wasel;
-   wire        c_sgnext=selfcheck.sgnext;
+   wire        c_sext=selfcheck.sext;
    wire        c_bsel=selfcheck.bsel;
    wire [1:0]  c_wdsel=selfcheck.wdsel;
    wire        c_wr=selfcheck.wr;
@@ -159,7 +159,7 @@ module risc231_m1_full_tb;
    wire ERROR_aluB           = mismatch(aluB, selfcheck.aluB) ? 1'bx : 1'b0;
    wire ERROR_pcsel          = mismatch(pcsel, selfcheck.pcsel) ? 1'bx : 1'b0;
    wire ERROR_wasel          = selfcheck.werf & (mismatch(wasel, selfcheck.wasel) ? 1'bx : 1'b0);
-   wire ERROR_sgnext         = mismatch(sgnext, selfcheck.sgnext) ? 1'bx : 1'b0;
+   wire ERROR_sext           = mismatch(sext, selfcheck.sext) ? 1'bx : 1'b0;
    wire ERROR_bsel           = mismatch(bsel, selfcheck.bsel) ? 1'bx : 1'b0;
    wire ERROR_wdsel          = mismatch(wdsel, selfcheck.wdsel) ? 1'bx : 1'b0;
    wire ERROR_wr             = mismatch(wr, selfcheck.wr) ? 1'bx : 1'b0;
@@ -169,11 +169,11 @@ module risc231_m1_full_tb;
               | ERROR_mem_writedata | ERROR_werf | ERROR_alufn | ERROR_Z
               | ERROR_ReadData1 | ERROR_ReadData2 | ERROR_alu_result | ERROR_reg_writeaddr
               | ERROR_reg_writedata | ERROR_signImm | ERROR_aluA | ERROR_aluB
-              | ERROR_pcsel | ERROR_wasel | ERROR_sgnext | ERROR_bsel | ERROR_wdsel | ERROR_wr | ERROR_asel;
+              | ERROR_pcsel | ERROR_wasel | ERROR_sext | ERROR_bsel | ERROR_wdsel | ERROR_wr | ERROR_asel;
 
    initial begin
-      $monitor("#%02d {pc, instr, mem_addr, mem_wr, mem_readdata, mem_writedata, werf, alufn, Z, ReadData1, ReadData2, alu_result, reg_writeaddr, reg_writedata, signImm, aluA, aluB, pcsel, wasel, sgnext, bsel, wdsel, wr, asel} <= {32'h%h, 32'h%h, 32'h%h, 1'b%b, 32'h%h, 32'h%h, 1'b%b, 5'b%b, 1'b%b, 32'h%h, 32'h%h, 32'h%h, 5'h%h, 32'h%h, 32'h%h, 32'h%h, 32'h%h, 2'b%b, 2'b%b, 1'b%b, 1'b%b, 2'b%b, 1'b%b, 2'b%b};",
-         $time, pc, instr, mem_addr, mem_wr, mem_readdata, mem_writedata, werf, alufn, Z, ReadData1, ReadData2, alu_result, reg_writeaddr, reg_writedata, signImm, aluA, aluB, pcsel, wasel, sgnext, bsel, wdsel, wr, asel);
+      $monitor("#%02d {pc, instr, mem_addr, mem_wr, mem_readdata, mem_writedata, werf, alufn, Z, ReadData1, ReadData2, alu_result, reg_writeaddr, reg_writedata, signImm, aluA, aluB, pcsel, wasel, sext, bsel, wdsel, wr, asel} <= {32'h%h, 32'h%h, 32'h%h, 1'b%b, 32'h%h, 32'h%h, 1'b%b, 5'b%b, 1'b%b, 32'h%h, 32'h%h, 32'h%h, 5'h%h, 32'h%h, 32'h%h, 32'h%h, 32'h%h, 2'b%b, 2'b%b, 1'b%b, 1'b%b, 2'b%b, 1'b%b, 2'b%b};",
+         $time, pc, instr, mem_addr, mem_wr, mem_readdata, mem_writedata, werf, alufn, Z, ReadData1, ReadData2, alu_result, reg_writeaddr, reg_writedata, signImm, aluA, aluB, pcsel, wasel, sext, bsel, wdsel, wr, asel);
    end
    
 endmodule

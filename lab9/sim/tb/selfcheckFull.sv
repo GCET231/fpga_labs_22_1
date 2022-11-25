@@ -2,11 +2,11 @@
 // Universidade Federal do Recôncavo da Bahia
 // -----------------------------------------------------------------------------
 // Author : João Carlos Bittencourt
-// File   : selfcheckController.sv
+// File   : selfcheckFull.sv
 // Editor : Visual Studio Code, tab size (3)
 // -----------------------------------------------------------------------------
 // Module Purpose:
-//      Módulo de auto-verificacao para o Controller_Tb
+//      Módulo de auto-verificacao para o risc231_m1_full_tb
 // -----------------------------------------------------------------------------
 `timescale 1ns / 1ps
 `default_nettype none

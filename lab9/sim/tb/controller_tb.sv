@@ -155,7 +155,7 @@ module controller_tb;
    
 
    initial begin
-      $monitor("     #%02d {pcsel, wasel, sgnext, bsel, wdsel, alufn, wr, werf, asel} <= {17'b%b};", $time, {pcsel, wasel, sgnext, bsel, wdsel, alufn, wr, werf, asel});
+      $monitor("     #%02d {pcsel, wasel, sext, bsel, wdsel, alufn, wr, werf, asel} <= {17'b%b};", $time, {pcsel, wasel, sext, bsel, wdsel, alufn, wr, werf, asel});
    end
    
 endmodule
